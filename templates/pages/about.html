@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}About page{% endblock %}
+
+{% block header_css %}
+{{ parent() }}
+<link rel="stylesheet" href="/assets/css/style.css" />
+{% endblock %}
+
+{% block footer_js %}
+{{ parent() }}
+<script src="assets/js/main.js"></script>
+{% endblock %}
+
+{% block body %}
+{{ parent() }}
+{% endblock %}
+
+{% block content %}
+{{ parent() }}
+<h1 class="title">ABOUT</h1>
+<p class="subtitle">It is a great day!</p>
+{% endblock %}
